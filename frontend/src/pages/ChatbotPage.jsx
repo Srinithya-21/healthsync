@@ -1,6 +1,6 @@
 // AI Chatbot Page
 import React, { useState, useEffect, useRef } from 'react';
-import { FiSend, FiTrash2, FiLoad } from 'react-icons/fi';
+import { FiSend, FiTrash2, FiRotateCw } from 'react-icons/fi';
 import { chatbotService } from '../services/api';
 
 export default function ChatbotPage() {
@@ -179,7 +179,7 @@ export default function ChatbotPage() {
           disabled={loading || !inputValue.trim()}
           className="btn-primary flex items-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed"
         >
-          {loading ? <FiLoad className="animate-spin" /> : <FiSend />}
+          {loading ? <FiRotateCw className="animate-spin" /> : <FiSend />}
         </button>
       </form>
     </div>
