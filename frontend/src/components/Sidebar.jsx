@@ -1,7 +1,7 @@
 // Sidebar Navigation Component
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { FiHome, FiTrendingUp, FiLeaf, FiCalendar, FiMessageCircle, FiCamera, FiUser, FiLogOut, FiMenu, FiX } from 'react-icons/fi';
+import { FiHome, FiTrendingUp, FiTarget, FiCalendar, FiMessageCircle, FiCamera, FiUser, FiLogOut, FiMenu, FiX } from 'react-icons/fi';
 import { useAuth } from '../context/AuthContext';
 
 export default function Sidebar() {
@@ -12,7 +12,7 @@ export default function Sidebar() {
   const menuItems = [
     { path: '/', label: 'Dashboard', icon: FiHome },
     { path: '/fitness', label: 'Fitness', icon: FiTrendingUp },
-    { path: '/nutrition', label: 'Nutrition', icon: FiLeaf },
+    { path: '/nutrition', label: 'Nutrition', icon: FiTarget },
     { path: '/period', label: 'Period Tracker', icon: FiCalendar },
     { path: '/chatbot', label: 'AI Chatbot', icon: FiMessageCircle },
     { path: '/skin-analysis', label: 'Skin Scanner', icon: FiCamera },
