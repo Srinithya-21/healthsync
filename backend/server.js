@@ -39,6 +39,17 @@ app.use('/api/chatbot', chatbotRoutes);
 app.use('/api/skin', skinAnalysisRoutes);
 app.use('/api/dashboard', dashboardRoutes);
 
+// Root endpoint
+app.get('/', (req, res) => {
+  res.json({ 
+    message: 'HealthSync Backend API',
+    status: '✅ Running',
+    version: '1.0.0',
+    endpoints: '/api/*',
+    health: '/api/health'
+  });
+});
+
 // Health check endpoint
 app.get('/api/health', (req, res) => {
   res.json({ status: 'HealthSync Backend is running! 🏃‍♀️' });
