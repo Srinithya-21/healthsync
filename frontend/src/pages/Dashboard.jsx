@@ -1,6 +1,6 @@
 // Dashboard Page - Main overview
 import React, { useState, useEffect } from 'react';
-import { FiTrendingUp, FiApple, FiCalendar, FiActivity, FiBarChart2, FiRefreshCw } from 'react-icons/fi';
+import { FiTrendingUp, FiTarget, FiCalendar, FiActivity, FiBarChart2, FiRefreshCw } from 'react-icons/fi';
 import { dashboardService, userService } from '../services/api';
 import StatCard from '../components/StatCard';
 import ProgressChart from '../components/ProgressChart';
@@ -68,7 +68,7 @@ export default function Dashboard() {
           color="text-orange-500"
         />
         <StatCard
-          icon={FiApple}
+          icon={FiTarget}
           title="Avg Daily Intake"
           value={`${data?.nutrition?.averageDailyCalories || 0} kcal`}
           subtitle="Last 7 days"
@@ -170,7 +170,7 @@ export default function Dashboard() {
             {data?.recentLogs?.lastMealLog && (
               <div className="flex items-start gap-3">
                 <div className="w-10 h-10 bg-green-100 rounded-lg flex items-center justify-center">
-                  <FiApple className="text-green-500" />
+                  <FiTarget className="text-green-500" />
                 </div>
                 <div>
                   <p className="text-sm font-semibold text-gray-800">
