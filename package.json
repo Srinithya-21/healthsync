@@ -1,0 +1,12 @@
+{
+  "name": "healthsync",
+  "version": "1.0.0",
+  "description": "HealthSync - Full-stack health tracking application",
+  "private": true,
+  "scripts": {
+    "install-all": "npm install && cd backend && npm install && cd ../frontend && npm install && cd ..",
+    "dev": "npm install",
+    "start": "cd backend && npm start"
+  },
+  "keywords": ["health", "fitness", "nutrition", "tracking", "wellness"]
+}
